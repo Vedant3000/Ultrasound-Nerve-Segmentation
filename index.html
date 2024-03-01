@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ultrasound Nerve Segmentation</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+</head>
+<body>
+    <h1>Ultrasound Nerve Segmentation</h1>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <h3>Input an Image</h3>
+        <input type="file" name="file" accept=".tif">
+        <button type="submit">Upload</button>
+    </form>
+   
+    {% if result_path %}
+    <div class="res">
+        <h2>Result:</h2>
+        <img src="/download/{{ result_filename }}" alt="Result Image" style="max-width: 100%;">
+    </div>
+        <a style="text-decoration: none" href="/download/{{ result_filename }}" download="result.tif"><center><button style="width: 400px; margin-top: 40px; margin-bottom:40px">Download Result</button></center></a>
+    {% endif %}
+
+</body>
+</html>
