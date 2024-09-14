@@ -33,15 +33,24 @@ The dataset used in this project consists of ultrasound nerve images with annota
 To run this project, you need to install the following dependencies:
 
 keras==2.12.0
+
 tensorflow==2.12.0
+
 segmentation_models
+
 tensorflow-io==0.31.0
+
 pandas
+
 matplotlib
+
 seaborn
+
 opencv-python
+
 sklearn
-scikit-learn
+
+scikit-learn'
 
 # Model Architecture
 U-Net:
