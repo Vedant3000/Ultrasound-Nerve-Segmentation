@@ -13,6 +13,7 @@ The model excels in capturing fine details and accurately segmenting nerve struc
 
 GANs are employed to enhance the segmentation results by generating higher quality predictions and refining boundaries.
 The GAN-based approach helps the model generalize better in cases of noisy or low-quality images.
+
 ## Data Augmentation & Preprocessing:
 
 Extensive data preprocessing techniques like resizing, normalization, and augmentation (flipping, rotation, etc.) are applied to ensure robustness and better generalization of the model.
@@ -51,6 +52,10 @@ Captures both high-level semantic information and low-level image details, makin
 - GANs:
 GANs consist of a generator and discriminator that work in tandem, with the generator refining the predicted segmentations and the discriminator ensuring realistic results.
 
+![Model Architecture](model_arch.png)
+
 ## Results
 U-Net achieves highly accurate nerve segmentation, producing precise and smooth boundaries.
 GAN-enhanced Segmentation further refines the predictions, especially in challenging scenarios where the nerve structures are less visible or noisy.
+
+![Results](results.png)
