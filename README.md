@@ -59,3 +59,6 @@ U-Net achieves highly accurate nerve segmentation, producing precise and smooth 
 GAN-enhanced Segmentation further refines the predictions, especially in challenging scenarios where the nerve structures are less visible or noisy.
 
 ![Results](results.png)
+
+## User Interface
+
