@@ -62,3 +62,11 @@ GAN-enhanced Segmentation further refines the predictions, especially in challen
 
 ## User Interface
 
+
+![result_ui](uns1.png)
+
+
+![result_ui](uns2.png)
+
+
+
